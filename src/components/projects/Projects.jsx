@@ -19,7 +19,7 @@ const Projects = () => {
         />
         <ProjectsCard
           title="Jumia Clone"
-          des="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          des="This project is a clone of the Jumia website, replicating its extensive product range including electronics, fashion, and household items. It features user authentication, detailed product listings, and a responsive design for an optimal shopping experience."
           src={jumia}
           githubLink="https://github.com/MadgulaVamshi06/Jumia_Clone"
           liveDemoLink="https://jumia-clone-0.vercel.app/"
