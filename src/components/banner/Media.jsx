@@ -2,16 +2,16 @@ import React from "react";
 import { FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoMdDownload } from "react-icons/io";
-import resume from "../../assets/resume.pdf";
+import vamshi_madgula_resume  from "../../assets/vamshi_madgula_resume.pdf";
 
 const Media = () => {
   const handleDownload = () => {
     // Open the document in a new tab
-    window.open(resume, "_blank");
+    window.open(vamshi_madgula_resume, "_blank");
 
     // Create a temporary link to trigger download with filename
     const link = document.createElement("a");
-    link.href = resume;
+    link.href = vamshi_madgula_resume ;
     link.download = "vamshi-madgula-resume.pdf"; // Specify the filename with extension
     document.body.appendChild(link);
     link.click();
@@ -61,7 +61,6 @@ const Media = () => {
             <span className="bannerIcon mr-2">
               <IoMdDownload />
             </span>
-            Download
           </button>
         </div>
       </div>
