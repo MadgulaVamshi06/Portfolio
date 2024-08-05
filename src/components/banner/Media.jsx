@@ -6,9 +6,13 @@ import resume from "../../assets/resume.pdf";
 
 const Media = () => {
   const handleDownload = () => {
+    // Open the document in a new tab
+    window.open(resume, "_blank");
+
+    // Create a temporary link to trigger download with filename
     const link = document.createElement("a");
     link.href = resume;
-    link.download = "vamshi-madgula-resume.pdf"; 
+    link.download = "vamshi-madgula-resume.pdf"; // Specify the filename with extension
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
