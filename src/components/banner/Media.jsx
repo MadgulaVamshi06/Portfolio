@@ -3,16 +3,17 @@ import { FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoMdDownload } from "react-icons/io";
 import resume from "../../assets/resume.pdf";
+
 const Media = () => {
   const handleDownload = () => {
-    window.open(resume, "_blank");
     const link = document.createElement("a");
     link.href = resume;
-    link.download = "vamshi-madgula-resume"; 
+    link.download = "vamshi-madgula-resume.pdf"; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
+
   return (
     <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
       <div>
@@ -32,9 +33,9 @@ const Media = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-              <span className="bannerIcon">
-            <FaGithub />
-          </span>
+            <span className="bannerIcon">
+              <FaGithub />
+            </span>
           </a>
           <a
             href="https://x.com/VamshiMadgula"
@@ -42,9 +43,9 @@ const Media = () => {
             rel="noopener noreferrer"
           >
             <span className="bannerIcon">
-            <FaTwitter />
-          </span>
-          </a>        
+              <FaTwitter />
+            </span>
+          </a>
         </div>
       </div>
       <div>
@@ -56,6 +57,7 @@ const Media = () => {
             <span className="bannerIcon mr-2">
               <IoMdDownload />
             </span>
+            Download
           </button>
         </div>
       </div>
