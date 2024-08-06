@@ -6,13 +6,10 @@ import vamshi_madgula_resume  from "../../assets/vamshi_madgula_resume.pdf";
 
 const Media = () => {
   const handleDownload = () => {
-    // Open the document in a new tab
     window.open(vamshi_madgula_resume, "_blank");
-
-    // Create a temporary link to trigger download with filename
     const link = document.createElement("a");
     link.href = vamshi_madgula_resume ;
-    link.download = "vamshi-madgula-resume.pdf"; // Specify the filename with extension
+    link.download = "vamshi-madgula-resume.pdf"; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
